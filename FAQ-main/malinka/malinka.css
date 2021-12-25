@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: plum;
+}
+.square{
+    height: 230px;
+    width: 230px;
+    border: 20px;
+    background: rebeccapurple;
+    border-radius: 20%;
+    border: 7px solid palevioletred;
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: square 2s infinite;
+}
+@keyframes square{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    75%{
+        transform: scale(1.1);
+    }
+    100%{
+                transform: scale(1);
+    }
+}
